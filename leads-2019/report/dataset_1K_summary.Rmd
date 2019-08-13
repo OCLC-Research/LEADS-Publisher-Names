@@ -1,0 +1,236 @@
+---
+title: "summary_1K_dataset"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = F)
+
+library(stringi)
+
+data = read.csv("../processed_data_1k/result_1k.csv", stringsAsFactors = F)
+```
+
+# What columns are available in the dataset?
+
+``` {R}
+colnames(data)
+```
+
+# Leader_6
+
+All leader_6 values are "a" ("Language material").
+
+# Leader_17
+
+```{R}
+table(data$leader_17)
+```
+
+# Leader_18
+
+```{R}
+table(data$leader_18)
+```
+
+# Leader_len
+
+All leader fields are 24 characters long.
+
+# F001_a
+
+All records have F001_a.
+
+# F008_06
+
+All F008_06 values are "t" ("Publication date and copyright date").
+
+# F008_0710
+
+All F008_0710s have numeric values. Below is the histogram of this number.
+
+``` {R}
+hist(as.numeric(data$F008_0710))
+```
+
+# F008_1114
+
+One record does not have any copyright date, even though the 008_06 value is "t." Fourteen records have the value of "9999" or "uuuu," practices deeply connected to series or serials; but some of them are monographs.
+
+Below is the plot of two years after removing all special values specified above. From the graph, there are a few records whose copyright year is larger than the publication year (all those on the right side of the *main trend line* in the graph). **These will be checked later.**
+
+``` {R}
+data1 = subset(data, !(data$F008_1114 == "" | data$F008_1114 == "9999" | data$F008_1114 == "uuuu"))
+plot(data1$F008_1114, data1$F008_0710)
+```
+
+# F008_1517
+
+All F008_1517 have non-empty values.
+
+# F008_22
+
+While the majority of records have the empty value ("Unknown or not specified"), all other values are used in the dataset.
+
+``` {R}
+table(data$F008_22)
+```
+
+# F008_2427
+
+I believe that this field needs to be further cleaned (into many binary codes for each value) to be meaningful. For now, the value "b" (bibliography) has the strongest presence after the empty value ("No specified nature of contents").
+
+``` {R}
+table(data$F008_2427)
+```
+
+# F008_28
+
+The majority of records have the empty value ("Not a government publication") in this digit. 
+
+``` {R}
+table(data$F008_28)
+```
+
+# F008_33
+
+The majority of records have the empty value ("Not fiction") in this digit. 
+
+``` {R}
+table(data$F008_33)
+```
+
+# F008_3537
+
+The majority of records have English as the primary language. 
+
+``` {R}
+table(data$F008_3537)
+```
+
+# F008_39
+
+The majority of records have "d" ("Other") in this digit. Others have either empty value ("National bibliographic agency") or "c" ("Cooperative cataloging program").
+
+``` {R}
+table(data$F008_39)
+```
+
+# F008_len
+
+All 008 fields have the length of 40 characters.
+
+# X006_is and X007_is
+
+There are 787 and 764 records in this dataset have 006 and 007 field, respectively.
+
+``` {R}
+table(data$X006_is)
+table(data$X007_is)
+```
+
+# isbn
+
+There are 279 records that do not have any ISBN. Six records have only one ISBN (they have been checked to contain only one). All other records have even numbers (from two to 26) of ISBNs.
+
+``` {R}
+sum(is.na(data$isbn))
+data1 = data[is.na(data$isbn) == F,]
+table(stri_count_fixed(data1$isbn, ";;", fixed = T) + 1)
+```
+
+# isbn_tag
+
+Among the 721 records with any ISBN, the majority of them (657 out of 721) contain only one ISBN *country + institute* code. 
+
+``` {R}
+sum(is.na(data$isbn_tag))
+data1 = data[is.na(data$isbn_tag) == F,]
+table(stri_count_fixed(data1$isbn_tag, ";;", fixed = T) + 1)
+```
+
+# F040_e
+
+There are 433 records whose 040$r with the value "RDA" (case insensitive in my algorithm). But this number is inconsistent with the number of records whose leader_18 has the value "i" (ISBD), which is also used for RDA record. I doubt that any subfield can be a consistantly reliable indicator for the use of RDA in the record.
+
+``` {R}
+table(data$F040_e)
+```
+
+# F041_ind1
+
+Only 32 records have this indicator, suggesting that either they have a second language or they are translated works. Among them, seven belong to the first scenario and 25 belong to the second. 
+
+``` {R}
+table(data$F041_ind1)
+```
+
+# F041_a & F041_h
+
+Given the low frequency of 041 field, I only inspected these subfields visually.
+
+# F050_a1 and F050_a2
+
+I took two parts from F050$a as two levels of the classification number: all characters before any number ("a1"; examples include A or PA) and all characters and numbers before any dot ("a2"; examples include A12 or PA1175).
+
+There are 316 records without any F050 classification number. I did not exclude any 050$a because of its second indicator (maybe I should?). Most of these records have only one "a1" LC classification number, which should be relatively easy to map to the top-level LC classification scheme.
+
+``` {R}
+sum(is.na(data$F050_a1))
+data1 = data[is.na(data$F050_a1) == F,]
+table(stri_count_fixed(data1$F050_a1, ";;", fixed = T) + 1)
+```
+
+# F082_a1 and F082_a2
+
+Similar with F050$a, I also extracted two levels of 082 classification number: the first digit ("a1"; examples include 0 and 1) and the first three digits ("a2"; examples include 001 and 123).
+
+There are 594 records in the dataset with any 082 classification number. Only two records have two top-level classification numbers; all others are classified into a single category. 
+
+``` {R}
+sum(is.na(data$F082_a1))
+data1 = data[is.na(data$F082_a1) == F,]
+table(stri_count_fixed(data1$F082_a1, ";;", fixed = T) + 1)
+table(data1$F082_a1)
+```
+
+# F26X fields
+
+These fields will be examined as part of the next step: cleaning and creating publisher clusters.
+
+# F336_b
+
+For all 33X field, both subfields a and b were used to match to subfield b. 
+
+In total, 29 records do not have 336$b. The majority of records have only "txt" ("Text") in this subfield.
+
+``` {R}
+sum(is.na(data$F336_b))
+table(data$F336_b)
+```
+
+# F337_b
+
+Thirty-one records do not have 337$b. And even though the majority of records have the code "n" ("Unmediated"), its ratio is much lower than that of "txt" in 336 field.
+
+``` {R}
+sum(is.na(data$F337_b))
+table(data$F337_b)
+```
+
+# F338_b
+
+One hundred and thirty-seven records do not have 338$b. "nc" ("Volume") is used in the majority of records.
+
+``` {R}
+sum(is.na(data$F338_b))
+table(data$F338_b)
+```
+
+# F490_a
+
+Only 342 records in our dataset have any 490$a.
+
+``` {R}
+sum(is.na(data$F490_a))
+```
