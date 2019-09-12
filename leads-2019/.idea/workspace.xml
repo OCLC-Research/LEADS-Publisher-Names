@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="7b6c4a00-a46e-45b2-8d3c-f71fdab1e01a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/leads-2019.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/#1_xml_to_csv.py" beforeDir="false" afterPath="$PROJECT_DIR$/#1_xml_to_csv.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/#2_publisher_name_cleaning.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/#2_publisher_name_cleaning_v2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/#2_publisher_name_cleaning_v3.py" beforeDir="false" afterPath="$PROJECT_DIR$/#2_publisher_name_cleaning_v3.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/#3_publisher_clustering.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/#3_publisher_clustering_v2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/#3_publisher_clustering_v3.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/#4_isbn_cluster_v3.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cluster_result1.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cluster_result2.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cluster_result_single1.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_export_10k.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/encode_marc_noc.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/grouped_cluster_10k_unweighted.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/grouped_cluster_14k_final.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/network_analysis.R" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/network_file.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/processed_data_10k/ID_cluster.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/processed_data_10k/cluster_result.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/processed_data_10k/cluster_result_1.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/processed_data_10k/cluster_result_2.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/processed_data_10k/cluster_result_single.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/processed_data_10k/grouped_cluster_10k_final.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/processed_data_10k/isbn_df.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/processed_data_10k/isbn_df_1.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/processed_data_10k/isbn_df_2.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/processed_data_10k/pre_cluster.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/processed_data_10k/publisher_10k_p1.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/processed_data_10k/publisher_10k_p1_a.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/processed_data_10k/publisher_10k_p2.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/processed_data_10k/publisher_10k_p2_processed.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/processed_data_10k/result_10k_cleaned 2.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/processed_data_10k/result_10k_cleaned.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/processed_data_10k_cluster/infomap-npre-unweighted-imp.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/processed_data_10k_cluster/infomap-npre-unweighted-nimp.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/processed_data_10k_cluster/infomap-pre-unweighted-imp.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/processed_data_10k_cluster/infomap-pre-unweighted-nimp.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/processed_data_10k_cluster/louvain-npre-unweighted-imp.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/processed_data_10k_cluster/louvain-npre-unweighted-nimp.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/processed_data_10k_cluster/louvain-pre-unweighted-imp.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/processed_data_10k_cluster/louvain-pre-unweighted-nimp.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/processed_data_10k_cluster/walktrap-npre-unweighted-imp.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/processed_data_10k_cluster/walktrap-npre-unweighted-nimp.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/processed_data_10k_cluster/walktrap-pre-unweighted-imp.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/processed_data_10k_cluster/walktrap-pre-unweighted-nimp.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/publisher_isbn_matrix.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/publisher_p2_parsed.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/dataset_1K_summary.Rmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sample_1k_marc.xml.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_python_regexp.py" beforeDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/#3_publisher_clustering_v4.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="301">
+              <caret line="152" selection-start-line="152" selection-end-line="152" />
+              <folding>
+                <element signature="e#0#19#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/#1_xml_to_csv.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="378">
+              <caret line="539" column="37" selection-start-line="539" selection-start-column="37" selection-end-line="539" selection-end-column="37" />
+              <folding>
+                <element signature="e#0#33#0" expanded="true" />
+                <element signature="e#146#185#0" />
+                <element signature="e#464#21713#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/#2_publisher_name_cleaning_v3.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2079">
+              <caret line="117" selection-start-line="117" selection-end-line="117" />
+              <folding>
+                <element signature="e#0#19#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>to_csv</find>
+      <find>publisher_out</find>
+      <find>&amp;</find>
+      <find>$</find>
+      <find>string_split</find>
+      <find>range</find>
+      <find>row</find>
+      <find>raw</find>
+      <find>_p1</find>
+      <find>020</find>
+      <find>isbn</find>
+      <find>nan</find>
+      <find>df</find>
+      <find>isbn_tag</find>
+      <find>isbn1</find>
+      <find>imprint</find>
+      <find>'cluster'</find>
+      <find>isbn_df.csv</find>
+      <find>isbn_df</find>
+      <find>filename_1</find>
+      <find>added</find>
+      <find>data_1</find>
+      <find>f26x</find>
+      <find>10k</find>
+      <find>Publisher</find>
+      <find>cluster_result_single</find>
+      <find>p1</find>
+      <find>reset</find>
+      <find>1m/</find>
+      <find>file2</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/#3_publisher_clustering.py" />
+        <option value="$PROJECT_DIR$/#2_publisher_name_cleaning.py" />
+        <option value="$PROJECT_DIR$/$4_isbn_cluster.py" />
+        <option value="$PROJECT_DIR$/#1_xml_to_csv_Kai.py" />
+        <option value="$PROJECT_DIR$/#3_2_p2.py" />
+        <option value="$PROJECT_DIR$/#4_isbn_cluster.py" />
+        <option value="$PROJECT_DIR$/#3_2_publisher_clustering_v2.py" />
+        <option value="$PROJECT_DIR$/#3_1_combine.py" />
+        <option value="$PROJECT_DIR$/#2_publisher_name_cleaning_v2.py" />
+        <option value="$PROJECT_DIR$/#3_publisher_clustering_v2.py" />
+        <option value="$PROJECT_DIR$/#3_publisher_clustering_v3.py" />
+        <option value="$PROJECT_DIR$/#1_xml_to_csv.py" />
+        <option value="$PROJECT_DIR$/#2_publisher_name_cleaning_v3.py" />
+        <option value="$PROJECT_DIR$/#4_isbn_cluster_v3.py" />
+        <option value="$PROJECT_DIR$/#3_publisher_clustering_v4.py" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="52" />
+    <option name="y" value="23" />
+    <option name="width" value="1388" />
+    <option name="height" value="877" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="leads-2019" type="b2602c69:ProjectViewProjectNode" />
+              <item name="leads-2019" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.Python" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7b6c4a00-a46e-45b2-8d3c-f71fdab1e01a" name="Default Changelist" comment="" />
+      <created>1562378776860</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1562378776860</updated>
+      <workItem from="1562378778274" duration="12000" />
+      <workItem from="1562604551342" duration="5371000" />
+      <workItem from="1562631187539" duration="5798000" />
+      <workItem from="1562797361778" duration="28552000" />
+      <workItem from="1562980000029" duration="4316000" />
+      <workItem from="1563213035315" duration="8073000" />
+      <workItem from="1563385620081" duration="8746000" />
+      <workItem from="1563759853105" duration="347000" />
+      <workItem from="1563824692879" duration="10819000" />
+      <workItem from="1563924110758" duration="10912000" />
+      <workItem from="1564066283310" duration="1613000" />
+      <workItem from="1564071666419" duration="7374000" />
+      <workItem from="1564187511403" duration="246000" />
+      <workItem from="1564191696689" duration="296000" />
+      <workItem from="1564423029089" duration="5884000" />
+      <workItem from="1564595991209" duration="4025000" />
+      <workItem from="1564611346109" duration="11497000" />
+      <workItem from="1565205115495" duration="788000" />
+      <workItem from="1565659785146" duration="5622000" />
+      <workItem from="1565716924696" duration="9338000" />
+      <workItem from="1566240686829" duration="15038000" />
+      <workItem from="1568163305453" duration="12054000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="156721000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="52" y="24" width="1388" height="877" extended-state="6" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24888559" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32903227" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32903227" />
+      <window_info anchor="bottom" id="Database Changes" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.32903227" />
+      <window_info anchor="bottom" id="Python Console" order="12" visible="true" weight="0.277707" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="SciView" order="3" />
+      <window_info anchor="right" id="Database" order="4" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/#2_publisher_name_cleaning.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="223">
+          <caret line="41" column="4" selection-start-line="41" selection-start-column="4" selection-end-line="41" selection-end-column="4" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/$4_isbn_cluster.py" />
+    <entry file="file://$PROJECT_DIR$/#3_publisher_clustering.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="431">
+          <caret line="179" column="12" lean-forward="true" selection-start-line="179" selection-start-column="12" selection-end-line="179" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/processed_data_1m/result_1m.csv" />
+    <entry file="file://$PROJECT_DIR$/#3_2_p2.py" />
+    <entry file="file://$PROJECT_DIR$/#1_xml_to_csv_Kai.py" />
+    <entry file="file://$PROJECT_DIR$/#3_1_combine.py" />
+    <entry file="file://$PROJECT_DIR$/#3_2_publisher_clustering_v2.py" />
+    <entry file="file://$PROJECT_DIR$/#4_isbn_cluster.py" />
+    <entry file="file://$PROJECT_DIR$/#3_publisher_clustering_v2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="17" column="31" selection-start-line="17" selection-start-column="31" selection-end-line="17" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/#2_publisher_name_cleaning_v2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="481">
+          <caret line="178" column="81" selection-end-line="180" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/#3_publisher_clustering_v3.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="134" column="19" selection-start-line="134" selection-start-column="19" selection-end-line="134" selection-end-column="19" />
+          <folding>
+            <element signature="e#149#168#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../leads-2018/code/get_scores_v3_hashing.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/#1_xml_to_csv.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="539" column="37" selection-start-line="539" selection-start-column="37" selection-end-line="539" selection-end-column="37" />
+          <folding>
+            <element signature="e#0#33#0" expanded="true" />
+            <element signature="e#146#185#0" />
+            <element signature="e#464#21713#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/#2_publisher_name_cleaning_v3.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2079">
+          <caret line="117" selection-start-line="117" selection-end-line="117" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/#4_isbn_cluster_v3.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="362">
+          <caret line="36" column="87" selection-start-line="36" selection-end-line="36" selection-end-column="87" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/#3_publisher_clustering_v4.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="301">
+          <caret line="152" selection-start-line="152" selection-end-line="152" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
